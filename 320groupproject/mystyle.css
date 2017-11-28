@@ -1,0 +1,153 @@
+/*clean slate*/
+html, body, h1, h2, h3, a, ol, ul, li, div, audio, blockquote, img, video, iframe, header, footer, main, nav {
+    margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+header, footer, menu, nav, section {
+	display: block;
+}
+
+/*end clean slate*/
+
+html {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	overflow-y: scroll;
+}
+
+body {
+    
+    background-color: white;
+  	font-family: Helvetica, Arial, Sans-Serif;
+  	float: none;
+  	text-align: center;
+  	height: 100%;
+  	width: 60%;
+  	padding-right: 20%;
+  	padding-left: 20%;
+
+}
+
+a {
+	color: pink;
+}
+
+.contact {
+	font-size: 100%;
+}
+
+strong {
+	color: lightblue;
+}
+
+h1, h2, h3, h4, h5 {
+    color: lightblue;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+
+}
+
+.spacedout {
+	letter-spacing: 5px;
+}
+
+.special {
+	font-style: italic;
+	font-size: 120%;
+}
+
+div p {
+	text-align: center;
+}
+
+
+div ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/*font-size: 14px;*/
+	text-align: left;
+	padding-right: 20%;
+	padding-left: 20%;
+	width:60%;
+}
+
+
+.bioimg {
+	float: right;
+	clear: both;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 0px;
+
+}
+
+
+p {
+   text-align: left;
+   margin-top: 0px;
+   padding-left: 20%;
+   padding-right: 20%;
+   width: 60%;
+   float: none;
+}
+
+.firstP:first-letter { 
+    font-size: 150%;
+    color: lightblue;
+}
+
+.c {
+	text-align: center;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+
+}
+
+.removemargin {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+nav {
+	margin-bottom: 20px;
+	float: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    height: 20px;
+    padding: 10px;
+    display: inline;
+}
+
+
+nav ul li a {
+    color: lightblue;
+    display: block;
+    display: inline;
+    text-decoration: underline;
+}
+
+
+nav ul li a:hover {
+	background-color: grey;
+    color: #00bfff;
+}
+
+nav ul li a:visited {
+    color: lightblue;
+}
+
