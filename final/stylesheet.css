@@ -1,0 +1,255 @@
+/*clean slate*/
+html, body, h1, h2, h3, a, ol, ul, li, div, audio, blockquote, img, video, iframe, header, footer, main, nav {
+    margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+header, footer, menu, nav, section {
+	display: block;
+}
+
+/*end clean slate*/
+
+header {
+	margin-top: 30px;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	overflow-y: scroll;
+}
+
+body {
+    
+    background-color: white;
+  	font-family: Helvetica, Arial, Sans-Serif;
+  	float: none;
+  	text-align: center;
+  	height: 100%;
+  	width: 60%;
+  	padding-right: 20%;
+  	padding-left: 20%;
+
+}
+
+a {
+	color: #a40202;
+}
+
+.contact {
+	font-size: 100%;
+}
+
+strong {
+	color: darkred;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #a40202;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+
+}
+
+.spacedout {
+	letter-spacing: 1px;
+}
+
+.special {
+	font-style: italic;
+	font-size: 120%;
+}
+
+div p {
+	text-align: center;
+}
+
+
+div ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/*font-size: 14px;*/
+	text-align: left;
+	padding-right: 20%;
+	padding-left: 20%;
+	width:60%;
+}
+
+
+.bioimg {
+	float: right;
+	clear: both;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 0px;
+
+}
+
+
+.button {
+    background-color: #a40202; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display:inline-block;
+    clear: right;
+}
+
+footer { 
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 80%;
+	font-style: italic;
+}
+
+p {
+   text-align: left;
+   margin-top: 0px;
+   padding-left: 5%;
+   padding-right: 5%;
+   width: 90%;
+   float: none;
+}
+
+
+.firstP:first-letter { 
+    font-size: 150%;
+    color: #a40202;
+}
+
+.c {
+	text-align: center;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+
+}
+
+.removemargin {
+	padding: 0px;
+	margin: 0px;
+}
+
+.RedNumbers {
+    list-style-type: none;
+}
+
+.RedNumbers li {
+    counter-increment: count-me;
+}
+.RedNumbers li::before {
+    content: counter(count-me) ". ";
+    /*display: block;*/
+    position: relative;
+    color: #a40202;
+    font-weight: bold;
+}
+
+nav {
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+nav ul {
+	text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a40202;
+}
+
+nav ul li {
+    height: 20px;
+   /* padding: 10px;*/
+    margin-bottom: 25px;
+    float: left;
+}
+
+
+nav ul li a {
+    color: #a40202;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+	background-color: grey;
+    color: #a40202;
+}
+
+nav ul li a:visited {
+    color: #a40202;
+}
+
+{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 537px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
