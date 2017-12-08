@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="description" content="A Sample form that forwards information to an e-mail">
+		<meta name="author" content="Your Name">
+
+		<title>320 Sample Form</title>
+
+		<link rel="stylesheet" href="styles.css" />
+		
+		<script type="text/javascript" src="submission.js"></script>
+
+	</head>
+
+	<body>
+	
+		<nav>
+			This is the navigation area.
+		</nav>
+
+		<header>
+			<h1>A Sample Form for the Web Design Course</h1>
+		</header>
+
+		<main>
+    
+			<form name="request" enctype="multipart/form-data" method="post" action="processing.php" onsubmit="submission_alert()">
+   	
+				<table class="table320">
+				
+					<tr>
+						<th>Your Name (Required)</th>
+						<td><input type="text" name="name_from" value="" size="25" placeholder="Please enter your name." required /></td>
+					</tr>
+
+					<tr>
+						<th>Email (Required)</th>
+						<td><input type="email" name="email_from" value="" size="30" placeholder="Please enter your e-mail." required /></td>
+					</tr>
+
+					<tr>
+						<th>Line of Text (Required)</th>
+						<td><input type="text" name="textline" value="" size="50" placeholder="Please enter some text." required /></td>
+					</tr>
+				
+					<tr>
+						<th>Line of Text (Optional)</th>
+						<td><input type="text" name="textline_optional" value="" size="50" placeholder="Please enter some text." /></td>
+					</tr>
+
+					<tr>
+						<th>URL (Optional)</th>
+						<td><input type="url" name="url" value="" size="50" placeholder="Please enter a URL." /></td>
+					</tr>
+				
+					<tr>
+						<th>Drop-down List (Required)</th>
+						<td>
+							<select name="dropdown" required>
+								<option value="" style="color:#555555">Please Select</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+								<option value="4">Option 4</option>
+								<option value="5">Option 5</option>
+							</select>
+						</td>
+					</tr>
+		
+					<tr>
+						<th>Drop-down List (Optional)</th>
+						<td>
+							<select name="dropdown_optional">
+								<option value="" style="color:#555555">Please Select</option>
+								<option value="1a">Option 1a</option>
+								<option value="2a">Option 2a</option>
+								<option value="3a">Option 3a</option>
+								<option value="4a">Option 4a</option>
+								<option value="5a">Option 5a</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<th>Radio Buttons (Required)</th>
+						<td>
+							<label><input type="radio" name="radio" value="1" required />Option 1</label>
+							<label><input type="radio" name="radio" value="2" required />Option 2</label>
+							<label><input type="radio" name="radio" value="3" required />Option 3</label>
+							<label><input type="radio" name="radio" value="4" required />Option 4</label>
+							<label><input type="radio" name="radio" value="5" required />Option 5</label>
+						</td>
+					</tr>
+
+					<tr>
+						<th>Radio Buttons (Optional)</th>
+						<td>
+							<label><input type="radio" name="radio_o" value="1a" />Option 1a</label>
+							<label><input type="radio" name="radio_o" value="2a" />Option 2a</label>
+							<label><input type="radio" name="radio_o" value="3a" />Option 3a</label>
+							<label><input type="radio" name="radio_o" value="4a" />Option 4a</label>
+							<label><input type="radio" name="radio_o" value="5a" />Option 5a</label>
+						</td>
+					</tr>
+
+					<tr>
+						<th>Checkboxes (Optional)</th>
+						<td>
+							<label><input type="checkbox" name="checkbox_1" value="Selected" />Option 1</label>
+							<label><input type="checkbox" name="checkbox_2" value="Selected" />Option 2</label>
+							<label><input type="checkbox" name="checkbox_3" value="Selected" />Option 3</label>
+							<label><input type="checkbox" name="checkbox_4" value="Selected" />Option 4</label>
+							<label><input type="checkbox" name="checkbox_5" value="Selected" />Option 5</label>
+						</td>
+					</tr>
+
+					<tr>
+						<th>Text Area (Required)</th>
+						<td><textarea name="textarea" cols="45" rows="5" placeholder="Please enter some text." required></textarea></td>
+					</tr>
+
+					<tr>
+						<th>Text Area (Optional)</th>
+						<td><textarea name="textarea_optional" cols="45" rows="5" placeholder="Please enter some text."></textarea></td>
+					</tr>
+
+					<tr>
+						<th>Attachment (Optional)</th>
+						<td><input type="file" name="file" /></td>
+					</tr>
+			
+					<tr>
+						<td colspan="2" style="background-color:#FFFFFF; text-align:center;">
+							<input type="submit" value="Submit" style="width:100px; margin:0px;" />
+						</td>
+					</tr>
+
+				</table>
+			
+			</form>
+
+		</main>
+		
+		<footer>
+			<address>
+				<a href="mailto:your_email@rutgers.com">Email me!</a>
+			</address>
+		</footer>
+	</body>
+
+</html>

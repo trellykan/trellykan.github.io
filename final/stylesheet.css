@@ -106,11 +106,20 @@ div ul{
     clear: right;
 }
 
+.border {
+  border-width: 1px;
+  border-color: grey;
+}
+
 footer { 
 	margin-top: 30px;
 	margin-bottom: 30px;
 	font-size: 80%;
 	font-style: italic;
+}
+
+td, tr, th {
+  text-align: left;
 }
 
 p {
@@ -196,8 +205,6 @@ nav ul li a:visited {
     color: white;
 }
 
-{box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -244,12 +251,3 @@ nav ul li a:visited {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
