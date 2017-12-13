@@ -33,7 +33,7 @@ body {
 }
 
 a {
-	color: gold;
+	color: lightblue;
 }
 
 .contact {
@@ -111,6 +111,7 @@ p {
 nav {
 	margin-bottom: 20px;
 	float: none;
+	text-decoration: none;
 }
 
 nav ul {
