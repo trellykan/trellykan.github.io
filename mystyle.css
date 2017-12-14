@@ -62,7 +62,6 @@ div p {
 	text-align: center;
 }
 
-
 .bioimg {
 	float: left;
 	padding-right: 5%;
@@ -71,6 +70,13 @@ div p {
 
 .portimg {
 	width: 50%;
+}
+
+.resume {
+	width: 70%;
+	padding-right: 15%;
+  	padding-left: 15%;
+  	text-align: left;
 }
 
 strong {
