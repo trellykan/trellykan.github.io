@@ -96,10 +96,6 @@ p {
    float: none;
 }
 
-.firstP:first-letter { 
-    font-size: 150%;
-    color:  #4d52be;
-}
 
 .c {
 	text-align: center;
@@ -110,26 +106,6 @@ p {
 	padding: 0px;
 	margin: 0px;
 }
-
-
- /* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-
-.column img {
-    margin-top: 12px;
-    width: 100%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-} 
 
 
 nav {
