@@ -62,17 +62,19 @@ div p {
 	text-align: center;
 }
 
+/*
 
 div ul{
 	margin-top: 0px;
 	margin-bottom: 0px;
-	/*font-size: 14px;*/
+	font-size: 14px;
 	text-align: left;
 	padding-right: 20%;
 	padding-left: 20%;
 	width:60%;
 }
 
+*/
 
 .bioimg {
 	float: right;
