@@ -13,44 +13,13 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href ="index.html" class="button">home</a></li>
-				<li><a href="about.html" class="button">about me</a></li>
-				<li>portfolio</li>
-				<li><a href="resume.html" class="button">resume</a></li>
-				<li><a href="musings.html" class="button">musings</a></li>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about me</a></li>
+				<li><a href="portfolio.html"><font color="black">portfolio</font></a></li>
+				<li><a href="resume.html">resume</a></li>
+				<li><a href="musings.html">musings</a></li>
 			</ul>
 		</nav>
-		<button onclick="four()">4</button>
-		<button onclick="two()">2</button>
-		<button onclick="one()">1</button>
-		<script>
-			// Get the elements with class="column"
-			var elements = document.getElementsByClassName("column");
-
-			// Declare a "loop" variable
-			var i;
-
-			// Four images side by side
-			function four() {
-			    for (i = 0; i < elements.length; i++) {
-			        elements[i].style.width = "25%";
-			    }
-			}
-
-			// Two images side by side
-			function two() {
-			    for (i = 0; i < elements.length; i++) {
-			        elements[i].style.width = "50%";
-			    }
-			}
-
-			// Full-width images
-			function one() {
-			    for (i = 0; i < elements.length; i++) {
-			        elements[i].style.width = "100%";
-			    }
-			}
-		</script> 
 		<main>
 			<div class="row">
 			  <div class="media/column">
@@ -91,7 +60,14 @@
 		</main>
 		<footer>
 			<address>
-				Want to get in touch? <a href="mailto:knt35@scarletmail.rutgers.edu">Email me!</a>
+				<a href="https://www.linkedin.com/in/kellyntran/" target="_blank"><img src="media/social icons/linkedin.png" 
+					height="30px" width="30px"></a>
+				<a href="https://github.com/trellykan" target="_blank"><img src="media/social icons/github.png"
+					height="30px" width="30px"></a>
+				<a href="https://medium.com/@trellykan" target="_blank"><img src="media/social icons/medium.png"
+					height="30px" width="30px"></a>
+				<a class="contact" href="mailto:knt35@scarletmail.rutgers.edu"><img src="media/social icons/mail.png"
+					height="30px" width="30px"></a>
 			</address>
 		</footer>
 	</body>
