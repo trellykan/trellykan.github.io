@@ -165,7 +165,12 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #grey;
+    background-color: #4d52be;
+}
+
+nav ul li a:active {
+	background-color: white;
+	color: #4d52be;
 }
 
 /*Portfolio CSS */
