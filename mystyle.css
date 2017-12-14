@@ -33,7 +33,7 @@ body {
 }
 
 a {
-	color: lightblue;
+	color:  #4d52be;
 }
 
 .contact {
@@ -84,7 +84,7 @@ div ul{
 
 
 strong {
-	color: lightblue;
+	color:  #4d52be;
 }
 
 p {
@@ -98,7 +98,7 @@ p {
 
 .firstP:first-letter { 
     font-size: 150%;
-    color: lightblue;
+    color:  #4d52be;
 }
 
 .c {
@@ -130,7 +130,7 @@ nav ul li {
 
 
 nav ul li a {
-    color: lightblue;
+    color:  #4d52be;
     display: block;
     display: inline;
     text-decoration: underline;
@@ -143,6 +143,6 @@ nav ul li a:hover {
 }
 
 nav ul li a:visited {
-    color: lightblue;
+    color:  #4d52be;
 }
 
