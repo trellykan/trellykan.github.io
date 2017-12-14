@@ -154,6 +154,11 @@ nav ul {
 
 nav li {
     float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav li a {
@@ -165,10 +170,15 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #4d52be;
+	background-color: white;
+	color: #4d52be;
 }
 
 nav ul li a:active {
 	background-color: white;
 	color: #4d52be;
+}
+
+nav ul li a:visited {
+    color:  #4d52be;
 }
