@@ -41,7 +41,7 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-    color: lightblue;
+    color: #4d52be;
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -115,7 +115,6 @@ p {
 nav {
 	margin-bottom: 20px;
 	float: none;
-	text-decoration: none;
 }
 
 nav ul {
@@ -133,13 +132,11 @@ nav ul li a {
     color:  #4d52be;
     display: block;
     display: inline;
-    text-decoration: underline;
 }
 
 
 nav ul li a:hover {
 	background-color: grey;
-    color: #00bfff;
 }
 
 nav ul li a:visited {
