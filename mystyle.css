@@ -83,6 +83,10 @@ div ul{
 }
 
 
+strong {
+	color: lightblue;
+}
+
 p {
    text-align: left;
    margin-top: 0px;
