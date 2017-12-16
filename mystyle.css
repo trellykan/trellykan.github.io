@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .spacedout {
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 }
 
 .special {
@@ -118,8 +118,8 @@ p {
 
 
 nav {
-	margin-right: 15%;
-	margin-left: 32%;
+	margin-right: 25%;
+	margin-left: 25%;
 	text-decoration: none;
 	color: #1d81df;
 }
