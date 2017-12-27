@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* Body */
 body {
-	font-family: Proxima Nova, Helvetica, Arial, "sans-serif";
-	background-color: #202020;
+	font-family: Trebuchet MS, Proxima-Nova, Helvetica, "sans-serif";
+	background-color: #FFF;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -22,6 +22,17 @@ body {
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face {
+	font-family: 'Shorelines Script';
+	src: url('Shorelines Script Bold.otf');
+	font-weight: normal;
+    font-style: normal;
+}
+
+a {
+	color: #F4BABB;
 }
 
 /* Container */
@@ -70,13 +81,17 @@ nav ul li {
 	/*font-weight: bold;*/
 	transition: all 0.3s linear;
 }
+
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
+
 ul li:hover a {
 	color: #398D3A;
 }
+
+
 .hero_header {
 	color: #FFFFFF;
 	text-align: center;
@@ -89,7 +104,7 @@ ul li:hover a {
 /* Hero Section */
 .hero {
 	background-color: #B3B3B3;
-	background-image: url(hackru.jpg);
+	background-image: url(flowers.jpg);
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
@@ -98,8 +113,9 @@ ul li:hover a {
 	color: #FFFFFF;
 }
 .tagline {
+	font-family: 'Shorelines Script';
 	text-align: center;
-	color: #FFFFFF;
+	color: #5FBA55;
 	margin-top: 4px;
 	font-weight: lighter;
 	/*text-transform: uppercase;*/
@@ -326,7 +342,7 @@ nav ul li {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	padding-top: 40%;
+	padding-top: 10%;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
@@ -347,7 +363,7 @@ nav ul li {
 	text-align: center;
 }
 .banner {
-	background-color: #2D9AB7;
+	background-color: #5FBA55;
 	background-image: none;
 }
 .tagline {
@@ -371,7 +387,7 @@ nav ul li {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	color: #043745;
+	color: #326625;
 }
 .container header nav {
 	margin-top: 0px;
@@ -419,7 +435,7 @@ nav ul li {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	padding-top: 40%;
+	padding-top: 10%;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
@@ -431,7 +447,7 @@ nav ul li {
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
-	margin-top: 30%;
+	margin-top: 20%;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
