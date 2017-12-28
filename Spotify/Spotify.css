@@ -117,7 +117,7 @@ ul li:hover a {
 .tagline {
 	font-family: 'Shorelines Script';
 	text-align: center;
-	color: #5FBA55;
+	color: #1DB954;
 	margin-top: 4px;
 	font-weight: lighter;
 	/*text-transform: uppercase;*/
@@ -221,7 +221,7 @@ footer {
 	float: left;
 }
 footer .footer_column h3 {
-	color: #5FBA55;
+	color: #1DB954;
 	text-align: center;
 }
 footer .footer_column p {
@@ -259,12 +259,12 @@ footer .footer_column p {
 	border-radius: 0px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border: 3px solid #5FBA55;
-	color: #5FBA55;
+	border: 3px solid #1DB954;
+	color: #1DB954;
 	transition: all 0.3s linear;
 }
 .button:hover {
-	background-color: #5FBA55;
+	background-color: #1DB954;
 	color: #FFF;
 	cursor: pointer;
 }
@@ -273,7 +273,7 @@ footer .footer_column p {
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: #5FBA55;
+	background-color: #1DB954;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -364,7 +364,7 @@ nav ul li {
 	text-align: center;
 }
 .banner {
-	background-color: #5FBA55;
+	background-color: #1DB954;
 	background-image: none;
 }
 .tagline {
