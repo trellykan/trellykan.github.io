@@ -42,7 +42,7 @@ body, html {
       </div>
       <a href="progress-report.pdf" target="_blank" class="w3-bar-item w3-button"><i class="far fa-file-powerpoint"></i> PROGRESS REPORT</a>
       <div class="w3-dropdown-hover">
-        <a href="#brainstorm" class="w3-button"><i class="far fa-object-ungroup"></i> PROTOTYPE <i class="fas fa-angle-down"></i></a>
+        <a href="" class="w3-button"><i class="far fa-object-ungroup"></i> PROTOTYPE <i class="fas fa-angle-down"></i></a>
           <div class="w3-dropdown-content w3-bar-block w3-card-4">
             <a href="#brainstorm" class="w3-bar-item w3-button">Brainstorming</a>
             <a href="#lofi" class="w3-bar-item w3-button">Lo-Fi Prototpype</a>
@@ -248,19 +248,19 @@ body, html {
 
   <style>
   .brainstorm {display:none}
-  .demo {cursor:pointer}
+  .demo1 {cursor:pointer}
   </style>
   
   <div class="w3-content">
     <div class="w3-col s2">   
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(1)">Checklist</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(2)">Daily Dashboard</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(3)">Emergency Contacts</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(4)">Mindread (Watch)</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(5)">Mindread (Phone)</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(6)">Monitor</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(7)">Q&amp;A Board</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(8)">Refresher</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(1)">Checklist</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(2)">Daily Dashboard</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(3)">Emergency Contacts</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(4)">Mindread (Watch)</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(5)">Mindread (Phone)</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(6)">Monitor</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(7)">Q&amp;A Board</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(8)">Refresher</button>
     </div>
     <div class="w3-col s10">
       <img class="brainstorm" src="brainstorm-checklist.png" style="width:100%">
@@ -275,31 +275,31 @@ body, html {
   </div>
 
   <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+    var bsIndex = 1;
+    showDivs(bsIndex);
 
     function plusDivs(n) {
-      showDivs(slideIndex += n);
+      showDivs(bsIndex += n);
     }
 
     function currentDiv(n) {
-      showDivs(slideIndex = n);
+      showDivs(bsIndex = n);
     }
 
     function showDivs(n) {
       var i;
       var x = document.getElementsByClassName("brainstorm");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
+      var dots = document.getElementsByClassName("demo1");
+      if (n > x.length) {bsIndex = 1}
+      if (n < 1) {bsIndex = x.length}
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
       }
-      x[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " w3-opacity-off";
+      x[bsIndex-1].style.display = "block";
+      dots[bsIndex-1].className += " w3-opacity-off";
     }
   </script>
 </div>
@@ -308,6 +308,7 @@ body, html {
 	 <h5 class="w3-center"><a href="brainstorm.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-file-pdf"> </i> Brainstorm Details</a></h5>
 </div>
 
+
 <!-- Lo-Fi Prototype -->
 <div class="w3-container w3-light-grey" style="padding:64px 16px" id="lofi">
   <h3 class="w3-center">Lo-Fi Prototype</h3>
@@ -315,16 +316,16 @@ body, html {
 
   <style>
   .lofi {display:none}
-  .demo {cursor:pointer}
+  .demo2 {cursor:pointer}
   </style>
   
   <div class="w3-content">
     <div class="w3-col s2">   
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(1)">Daily Dashboard (1)</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(2)">Daily Dashboard (2)</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(3)">Monitor (1)</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(4)">Monitor (2)</button>
-        <button class="demo w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(5)">Q&amp;A Board</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(1)">Daily Dashboard (1)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(2)">Daily Dashboard (2)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(3)">Monitor (1)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(4)">Monitor (2)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(5)">Q&amp;A Board</button>
     </div>
     <div class="w3-col s10">
       <img class="lofi" src="lofi-dailydash.png" style="width:100%">
@@ -350,7 +351,7 @@ body, html {
       function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("lofi");
-        var dots = document.getElementsByClassName("demo");
+        var dots = document.getElementsByClassName("demo2");
         if (n > x.length) {slideIndex = 1}
         if (n < 1) {slideIndex = x.length}
         for (i = 0; i < x.length; i++) {
