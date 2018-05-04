@@ -43,7 +43,7 @@ body, html {
       </div>
       <a href="progress-report.pdf" target="_blank" class="w3-bar-item w3-button"><i class="far fa-file-powerpoint"></i> PROGRESS REPORT</a>
       <div class="w3-dropdown-hover">
-        <a href="" class="w3-button"><i class="far fa-object-ungroup"></i> PROTOTYPE <i class="fas fa-angle-down"></i></a>
+        <a href="#brainstorm" class="w3-button"><i class="far fa-object-ungroup"></i> PROTOTYPE <i class="fas fa-angle-down"></i></a>
           <div class="w3-dropdown-content w3-bar-block w3-card-4">
             <a href="#brainstorm" class="w3-bar-item w3-button">Brainstorming</a>
             <a href="#lofi" class="w3-bar-item w3-button">Lo-Fi Prototpype</a>
@@ -53,6 +53,8 @@ body, html {
           </div>
       </div>
       <a href="#video" class="w3-bar-item w3-button"><i class="fab fa-youtube"></i> VIDEO</a>
+      <a href="#he" class="w3-bar-item w3-button"><i class="far fa-clipboard"></i></i> EVALUATION</a>
+
 
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -72,6 +74,8 @@ body, html {
   <a href="progress-report.pdf" onclick="w3_close()" class="w3-bar-item w3-button">PROGRESS REPORT</a>
   <a href="#brainstorm" onclick="w3_close()" class="w3-bar-item w3-button">PROTOTYPE</a>
   <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button">VIDEO</a>
+  <a href="#he" onclick="w3_close()" class="w3-bar-item w3-button">EVALUATION</a>
+
 </nav>
 
 <!-- Header with full-height image -->
@@ -79,7 +83,7 @@ body, html {
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">Ally the Alzheimer's App</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Ally the Alzheimer's App</span><br>
-    <span class="w3-large">Start taking care of what matters.</span>
+    <span class="w3-large">So that you can care for your patients, Ally cares for you.</span>
     <p><a href="quicksheet.pdf" target="_blank" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Project Description for Heuristic Evaluation - Learn more!</a></p>
   </div> 
 </header>
@@ -232,10 +236,10 @@ body, html {
 <div class="w3-container w3-light-grey w3-padding-64" id="personas">
   <div class="w3-row-padding">
     <h3 class="w3-center">PERSONAS</h3>
-    <div class="w3-center"><img src="persona-sheila.png" style="width:80%""></div>
+    <div class="w3-center"><img src="persona-sheila.png" style="width:80%"></div>
     <br>
     <br>
-    <div class="w3-center"><img src="persona-hana.png" style="width:80%""></div>
+    <div class="w3-center"><img src="persona-hana.png" style="width:80%"></div>
   </div>
 </div>
 
@@ -248,7 +252,7 @@ body, html {
 <!-- Brainstorm -->
 <div class="w3-container" style="padding:64px 16px" id="brainstorm">
   <h3 class="w3-center">Brainstorm</h3>
-  <p class="w3-center w3-large">Early stages of brainstorming features for the app</p>
+  <p class="w3-center w3-large">Early stages of brainstorming features for the app (click side buttons to show sketches)</p>
 
   <style>
   .slider {display:none}
@@ -288,7 +292,7 @@ body, html {
 <!-- Lo-Fi Prototype -->
 <div class="w3-container w3-light-grey" style="padding:64px 16px" id="lofi">
   <h3 class="w3-center">Lo-Fi Prototype</h3>
-  <p class="w3-center w3-large">Refined features from brainstorming</p>
+  <p class="w3-center w3-large">Refined features from brainstorming (click side buttons to show sketches)</p>
 
   <style>
   .lofi {display:none}
@@ -360,7 +364,7 @@ body, html {
 
 <!-- Critique -->
 <div class="w3-container w3-black w3-padding-64" id="critique">
-  <h3 class="w3-center"><a href="critique.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-file-pdf"> </i> Critique &amp; Comments</a></h3>
+  <h3 class="w3-center"><a href="critique.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-file-pdf"> </i> Critique and Comments <i class="fas fa-external-link-alt"></a></h3>
 </div>
 
 <!-- Hi-Fi Prototype -->
@@ -390,12 +394,62 @@ body, html {
   </div>
 </div>
 
+<!-- Heuristic Evaluation -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="he">
+  <div class="w3-row-padding">
+  	<div>
+  	  <h3>Heuristic Evaluation</h3>
+      <table class="w3-table-all">
+      	<tr>
+      		<td width="33%"><b>Feedback</b>
+      		</td>
+      		<td width="33%"><b>Why It Matters</b>
+      		</td>
+      		<td width="33%"><b>Response and Possible Solutions</b>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>Performing the action of going back is not always consistent in this app. For instance, if you go on the control page and hit one of those 4 options, there is no way to go back to the main control page without just pressing the control button at the bottom. This is a problem because it is a bit confusing how the back button is offered on other pages, but not offered on any of the control pages. As I was going through the app, I noticed this and was unsure at first how to get back to the main control page without the back button before noticing that I could hit the main control button at the bottom. 
+      		</td>
+      		<td>This is highly critical to maintain consistency throughout the app. Navigation should be obvious, easy, and intuitive. As the feedback pointed out, it may not be apparent that pressing the control button is the way to navigate backwards so we should have the back arrow visible on all screens. 
+      		</td>
+      		<td>Back arrow buttons have been added to all screens of the app to ensure navigating is consistent and fluid. 
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>In the check list , it does not match the real world version of a checklist. Also checklist are used either completed or not and a user would check them off, the checklist in you app appears as more as a schedule.
+      		</td>
+      		<td>This issue is critical because the user might try to check things off on the Checklist even though this feature is set up more like a schedule. The user may be confused and waste time trying to perform a function that isn’t available. 
+      		</td>
+      		<td>The feature will be renamed to Schedule instead of Checklist, however, we want to be able to show the effect of after an item has passed or has been completed. The functionality of Indigo is limited, but we would like to be able to implement perhaps greying out or crossing off an item on the schedule after the time has passed. 
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>There is no personalization on the user side. I see on the settings page you can add you background, experience, and your e-mail. But I was curious if you could add information about your patient. There is a button for Manage Patient Profile, but don't know if this is something that will be added on later. 
+      		</td>
+      		<td>Not critical, however, it can confuse our users and possibly ruin the experience.
+      		</td>
+      		<td>There is actually a patient profile manager. When you first signup, it will ask you what your patient’s symptoms are and their name. You can also add more patients. However, we should add another page when signing up. One page should be added and clearly state that that page is for the caregiver’s information. Then after that page, it should be the patient’s information but clearly stated that it’s for the patients. 
+      		</td>
+      	</tr>
+      </table>
+    </div>
+    <br/>
+    <div>
+      <p>Our peers mainly made suggestions concerning confusion over the UI aspects of our app. Some of the critical points mentioned were the lack of action buttons available for some parts of the app, such as the availability of a consistent back button and button to add questions on the Q&amp;A board. We plan to address this by adding in the necessary buttons on the pages where they’re lacking in the app while ensuring that we maintain consistency with other aspects of the user interface. One other critical issue dealt with information handling, specifically with users lacking the means for verifying information and personalization. We plan to address this by adding in the functionality of error checking along with additional personalization sections when users sign up to create a greater sense of “friendliness” between the user and our application, echoing our motto that our app truly cares for them. One final issue that our peers suggested was making labels available on our monitor board to inform users textually about the different sections available to them. We plan to implement these text features by allowing users to choose whether or not they would like the text to be displayed at the touch of the screen. As we continue improving our design, we will be focusing much more on maintaining consistency while ensuring that users have a mobile and user-friendly experience navigating through Ally. </p>
+      <p><a href="assignments/P12.pdf" target="_blank" class="w3-button w3-black"><i class="fa fa-file-pdf"> </i> Full Heuristic Evaluation Response</a></p>
+    </div>
+    <br/>
+  </div>
+</div>
+ 
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the top</a>
   <p>techtr.io 2018</p>
 </footer>
- 
+
 <script>
 
 // Modal Image Gallery
