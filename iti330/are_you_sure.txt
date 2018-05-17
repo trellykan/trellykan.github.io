@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Reset Database - Are You Sure?</title>
+		<link rel="stylesheet" type="text/css"  href="database.css"/>
+	</head>
+	<style>
+		p, h1, h2, h3, h4, h5, body { font-family: Helvetica, Open Sans; }
+	</style>
+	<body>
+		<h1>Reset Database</h1>
+		<p>
+			<b>Resetting the database will clear ALL users, viewings, etc. ARE YOU SURE?</b>
+			<a href="reset.php">Yes</a> || <a href="project.php">No</a>
+		</p>
+	</body>
+</html>

@@ -1,75 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="descrption" content="About | Kelly Tran">
-		<meta name="author" content="Kelly">
-		<title>About Me | Kelly Tran</title>
-		<link rel="icon" href="circleme.png" type="image/x-icon" />
-		<link rel="stylesheet" type="text/css" href="mystyle.css">
-	</head>
-	<body>
-		<header>
-			<a href="index.html"><img src="media/signature.png" alt="Kelly Tran"></a>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html"><font color="black">about me</font></a></li>
-				<li><a href="designs.html">designs</a></li>
-				<li><a href="media/kntresume.pdf" target="_blank">resume</a></li>
-			</ul>
-		</nav>
-		<main>
-			<table style="width:90%">
-				<tr>
-					<td valign="top" style="width:38%"">
-						<img src="media/circleme.png" height="200px" width="200px" alt="Me">
-					</td>
-					<td style="text-align:left">
-						Hello! My name is Kelly Tran. <br><br>
-						<strong>Professional interests:</strong><br>
-						<em>Information Technology and Informatics | Psychology</em><br><br>
-						I have a particular interest in UX/UI design because I believe it is the bridge that connects technology
-						and human behavior, but I'm easily intrigued by new things! My professional interests are always growing and could lead me anywhere. I'm completely okay with that.<br><br>
-						<strong>Interesting interests:</strong><br>
-						<ul>
-							<li>NPR Tiny Desk Concerts (<a href="https://www.npr.org/event/music/563726692/amin-tiny-desk-concert" target="_blank">x</a>)
-								(<a href="https://www.npr.org/event/music/359661053/t-pain-tiny-desk-concert" target="_blank">x</a>)
-								(<a href="https://www.npr.org/event/music/533112160/chance-the-rapper-tiny-desk-concert" target="_blank">x</a>)
-								(<a href="https://www.npr.org/event/music/569203961/tyler-the-creator-tiny-desk-concert" target="_blank">x</a>)
-							</li>
-							<li>Spoken Word Poetry
-								(<a href="https://www.youtube.com/watch?v=q0LyLLQkAdM" target="_blank">Sophia Thakur</a>)
-								(<a href="https://www.youtube.com/watch?v=cxGWGohIXiw" target="_blank">Harry Baker</a>)
-								(<a href="https://www.ted.com/talks/sarah_kay_how_many_lives_can_you_live" target="_blank">Sarah Kay</a>)
-							</li>
-							<li>Movies 
-								(<a href="http://www.imdb.com/title/tt3262342/" target="_blank">Loving Vincent</a>) 
-								(<a href="http://www.imdb.com/title/tt0478087/" target="_blank">21</a>)
-								(<a href="http://www.imdb.com/title/tt0482571/" target="_blank">The Prestige</a>)
-							</li>
-							<li>Tuesdays with Morrie by Mitch Albom<br>
-								<em>"In business, people negotiate to win. They negotiate to get what they want. Maybe you're too used to that. Love is different. Love is when you are as concerned about someone else's situation as you are about your own."</em>
-							</li>
-							<li>Fried chicken and ice cream can mitigate any cause for a bad mood.
-							</li>
-						</ul>
-					</td>
-				</tr>
-			</table>	
-		</main>
-		<br>
-		<footer>
-			<address>
-				<a href="https://www.linkedin.com/in/kellyntran/" target="_blank"><img src="media/social icons/linkedin.png" 
-					height="30px" width="30px"></a>
-				<a href="https://github.com/trellykan" target="_blank"><img src="media/social icons/github.png"
-					height="30px" width="30px"></a>
-				<a href="https://medium.com/@trellykan" target="_blank"><img src="media/social icons/medium.png"
-					height="30px" width="30px"></a>
-				<a class="contact" href="mailto:knt35@scarletmail.rutgers.edu"><img src="media/social icons/mail.png"
-					height="30px" width="30px"></a>
-			</address>
-		</footer>
-	</body>
+<html>
+<title>Kelly Tran</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- Color Palette
+	https://coolors.co/447da8-628db8-859bb2-69170b-94391e
+-->
+
+<style>
+a {
+	text-decoration: none;
+	color:#447DA8;
+}
+
+body {	font-family: "Noto Sans", sans-serif
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Noto Sans", sans-serif;
+	color:#447DA8;
+}
+.w3-row-padding img {margin-bottom: 12px}
+
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/dsc2008.JPG');
+    min-height: 100%;
+}
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/white.png");
+    min-height: 100%;
+}
+
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Header -->
+<div style="min-height:100%">
+  <header class="bgimg1 w3-center" style="padding:128px 16px;margin-left:40%;" id="home">
+  	<h2>Hello! I'm</h2>
+    <img src="images/Transignature.png" style="width:60%; margin:auto;">
+    <p>BA Information Technology and Informatics, Minor in Psychology<br/> Rutgers, the State University of New Jersey</p>
+    <img src="images/dsc2008.JPG" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="images/dsc2008.JPG" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <a href="ResumeMay2018.pdf" target="_blank"><i class="fa fa-download"></i> Download Resume</a>
+    </button>
+  </header>
+</div>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+
+ <!-- About Section -->
+  <div class="w3-content w3-justify w3-padding-16" id="about">
+    <h3>about me</h3>
+    <hr class="w3-opacity">
+    <p>First of all, my mom lives in New Jersey, I live in the moment.
+    	<br/><br/>
+    	About me professionally? I'm interested in UX/UI design because technology comes easy to me, but I know that's not the case for most people. Technoloy has the ability to improve so many lives, but the barrier to entry due to poor design prevents it from doing so. I think we have an obligation to fix that. 
+    </p>
+ <!-- End About Section -->
+
+
+<!-- Skills -->
+<div class="w3-content w3-justify w3-padding-16" id="skills">
+
+    <h3 class="w3-padding-16">skills </h3>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-blue" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-blue" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-blue" style="width:80%">80%</div>
+    </div><br>
+
+</div>
+ <!-- End of Skills -->
+
+ <!-- Projects --> 
+ <div class="w3-padding-16 w3-content" id="projects">
+
+<h3 class="w3-padding-16">projects </h3>
+    <div class="w3-twothird w3-padding-16">
+    	<p class="w3-wide">Ally, the Alzheimer's App</p>
+    	<p>Prototype a mobile and smartwatch app that assists caregivers of dementia patients
+    		<ul>
+    			<li>Design survey and interview questions to collect user data and refine the problem statement</li>
+    			<li>Collected information from 60+ surveys and 3 interviews, synthesized the data using affinity diagrams</li>
+    			<li>Created personas and storyboards to define the use cases</li>
+    			<li>Used Balsamiq Cloud to collaboratively create wireframes for the prototype</li>
+    			<li>Conducted heuristic evaluations with peers to refine prototype based on critique</li>
+    			<li>Used Indigo Studio to create a high-fidelity prototype</li>
+    		</ul>
+    	</p>
+    	<button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <a href="https://trellykan.github.io/hci/" target="_blank"><i class="fas fa-desktop"></i> View Details on Website</a>
+    </button>
+    </div>
+
+	<div class="w3-third w3-padding-16">
+		<img src="images/checklist.png">
+    </div>
+ 
+ </div>
+
+<!-- End of Projects -->
+
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-16 w3-content" id="photography">
+    <h3>photography</h3>
+    <p> In no way do I label myself a professional photographer, but I think it's important to capture the a sky that makes you feel calm, your favorite view in the world, good food, and good memories
+    </p>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <img src="ig/europe.jpg" style="width:100%">
+        <img src="ig/chicago.jpg" style="width:100%">
+        <img src="ig/chicagoplane.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-third">
+        <img src="ig/brunch.jpg" style="width:100%">
+        <img src="ig/sunrise.jpg" style="width:100%">
+        <img src="ig/auschwitz.jpg" style="width:100%">
+      </div>
+
+	 <div class="w3-third">
+        <img src="ig/concert.jpg" style="width:100%">
+        <img src="ig/ohare.jpg" style="width:100%">
+        <img src="ig/weslie.jpg" style="width:100%">
+      </div>
+
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</body>
 </html>

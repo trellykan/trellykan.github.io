@@ -1,0 +1,132 @@
+USE iti330_knt35;
+
+DELETE FROM User_Viewings;
+DELETE FROM Viewing;
+DELETE FROM TV_Show;
+DELETE FROM Genre;
+DELETE FROM Users;
+DELETE FROM Ongoing;
+
+INSERT INTO Users (UserFirstName, UserLastName) VALUES ('Amy', 'Bai');
+INSERT INTO Users (UserFirstName, UserLastName) VALUES ('Kelly','Tran');
+INSERT INTO Users (UserFirstName, UserLastName) VALUES ('Alex', 'Faltyn');
+INSERT INTO Users (UserFirstName, UserLastName) VALUES ('Vivian', 'Chen');
+
+INSERT INTO Genre(Genre) VALUE ('Comedy');
+INSERT INTO Genre(Genre) VALUE ('Romance');
+insert INTO Genre(Genre) VALUE ('Horror');
+insert INTO Genre(Genre) VALUE ('Drama');
+
+INSERT INTO Ongoing(Ongoing) VALUE ('Ongoing');
+INSERT INTO Ongoing(Ongoing) VALUE ('Completed');
+INSERT INTO Ongoing(Ongoing) VALUE ('Cancelled');
+
+INSERT INTO TV_Show (TV_Title, Num_of_Favorites, Network, Genre, Ongoing) 
+    VALUES ('Friends', 0, 'NBC', 'Romance', 'Completed');
+INSERT INTO TV_Show (TV_Title, Num_of_Favorites, Network, Genre, Ongoing) 
+    VALUES ('Bobs Burgers', 0, 'FOX', 'Comedy', 'Ongoing');
+INSERT INTO TV_Show (TV_Title, Num_of_Favorites, Network, Genre, Ongoing) 
+    VALUES ('Suits', 0, 'USA', 'Drama', 'Ongoing');
+INSERT INTO TV_Show (TV_Title, Num_of_Favorites, Network, Genre, Ongoing) 
+    VALUES ('The Walking Dead', 0, 'AMC', 'Horror', 'Completed');
+INSERT INTO TV_Show (TV_Title, Num_of_Favorites, Network, Genre, Ongoing)
+    VALUES ('Adventure Time', 0, 'Cartoon Network', 'Comedy', 'Cancelled');
+
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (2, 'Friends');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (1, 'Friends');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (3, 'Friends');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (4, 'Friends');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (2, 'Suits');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (3, 'Suits');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (3, 'Bobs Burgers');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (3, 'The Walking Dead');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (2, 'The Walking Dead');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (1, 'The Walking Dead');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (1, 'Adventure Time');
+INSERT INTO User_Favorites(UserID, TV_Title) VALUES (4, 'Adventure Time');
+
+UPDATE TV_Show 
+	SET Num_of_Favorites = (SELECT count(TV_Title) from User_Favorites where TV_Title='Friends')
+    WHERE TV_Title='Friends';
+UPDATE TV_Show 
+	SET Num_of_Favorites = (SELECT count(TV_Title) from User_Favorites where TV_Title='Bobs Burgers')
+    WHERE TV_Title='Bobs Burgers';
+UPDATE TV_Show 
+	SET Num_of_Favorites = (SELECT count(TV_Title) from User_Favorites where TV_Title='Suits')
+    WHERE TV_Title='Suits';
+UPDATE TV_Show 
+	SET Num_of_Favorites = (SELECT count(TV_Title) from User_Favorites where TV_Title='The Walking Dead')
+    WHERE TV_Title='The Walking Dead';
+UPDATE TV_Show 
+	SET Num_of_Favorites = (SELECT count(TV_Title) from User_Favorites where TV_Title='Adventure Time')
+    WHERE TV_Title='Adventure Time';
+
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Friends', 'The One With the Database Project', '2018-02-07', '18:00:00', '18:30:00','00:30:00', '5'); 
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Bobs Burgers', 'Gene Writes a Song', '2017-01-28', '14:00:00', '14:25:00', '00:25:00', '21');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Suits', 'Paris', '2017-09-15','15:00:00', '16:00:00', '01:00:00', '10');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('The Walking Dead', 'Dead Or Alive Or', '2018-02-06', '23:00:00', '00:00:00', '01:00:00', '4');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Adventure Time', 'It Came from the Nightosphere', '2017-11-07', '09:00:00', '09:25:00', '00:25:00', '1');
+
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Friends', 'The One Where No Ones Ready', '1996-09-26', '18:00:00', '18:30:00','00:30:00', '2'); 
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Bobs Burgers', 'Sliding Bobs', '2015-09-27', '14:00:00', '14:25:00', '00:25:00', '1');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Suits', 'Break Point', '2012-07-19', '15:00:00', '16:00:00','01:00:00', '5');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('The Walking Dead', 'Always Accountable', '2015-11-15', '23:00:00', '00:00:00', '01:00:00', '6');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Adventure Time', 'Hitman', '2011-08-01', '09:00:00', '09:25:00', '00:25:00', '4');
+
+
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Friends', 'The One With Bachelors Party', '2013-05-17', '18:00:00', '18:30:00','00:30:00', '3'); 
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Bobs Burgers', 'Tina Finds a True Love', '2016-11-12', '14:00:00', '14:25:00', '00:25:00', '12');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Suits', 'All-In', '2017-08-12', '15:00:00', '16:00:00', '01:00:00', '7');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('The Walking Dead', 'Killing Time', '2016-10-08', '23:00:00', '00:00:00', '01:00:00', '9');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Adventure Time', 'Unicorn Tale', '2014-07-07', '09:00:00', '09:25:00', '00:25:00', '8');
+      
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Friends', 'The One With the Marriage is Real', '2017-12-07', '18:00:00', '18:30:00','00:30:00', '10'); 
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Bobs Burgers', 'Bob Retires', '2018-01-22', '14:00:00', '14:25:00', '00:25:00', '3');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Suits', 'Take Three', '2015-10-25', '15:00:00', '16:00:00', '01:00:00', '17');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('The Walking Dead', 'Dusk', '2018-03-17', '23:00:00', '00:00:00', '01:00:00', '11');
+INSERT INTO Viewing (TV_Title, Episode_Title, DateAired, StartTime, EndTime, Duration, EpisodeNumber) 
+    VALUES ('Adventure Time', 'Candy Prince', '2016-08-01', '09:00:00', '09:25:00', '00:25:00', '7');
+
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (1, 1);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (2, 2);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (3, 3);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (4, 4);
+
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (1, 5);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (2, 6);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (3, 7);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (4, 8);
+
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (1, 9);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (2, 10);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (3, 11);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (4, 12);
+
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (1, 13);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (2, 14);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (3, 15);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (4, 16);
+
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (1, 17);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (2, 18);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (3, 19);
+INSERT INTO User_Viewings (UserID, ViewingID) VALUES (4, 20);
