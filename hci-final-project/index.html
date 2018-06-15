@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<title>Ally the Alzheimer's App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="allystylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("splash.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">TECHTR.IO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
+      <a href="#data" class="w3-bar-item w3-button"><i class="far fa-chart-bar"></i> DATA</a>
+      <div class="w3-dropdown-hover">
+        <a href="#personas" class="w3-button"><i class="far fa-window-restore"></i> PERSONAS   <i class="fas fa-angle-down"></i></a>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#storyboards" class="w3-bar-item w3-button">Storyboards</a>
+          </div>
+      </div>
+      <a href="progress-report.pdf" target="_blank" class="w3-bar-item w3-button"><i class="far fa-file-powerpoint"></i> PROGRESS REPORT</a>
+      <div class="w3-dropdown-hover">
+        <a href="#brainstorm" class="w3-button"><i class="far fa-object-ungroup"></i> PROTOTYPE <i class="fas fa-angle-down"></i></a>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#brainstorm" class="w3-bar-item w3-button">Brainstorming</a>
+            <a href="#lofi" class="w3-bar-item w3-button">Lo-Fi Prototpype</a>
+            <a href="#flowchart" class="w3-bar-item w3-button">Flowchart and Wireframe</a>
+            <a href="#critique" class="w3-bar-item w3-button">Critique</a>
+            <a href="#hifi" class="w3-bar-item w3-button">Hi-Fi Prototpype</a>
+          </div>
+      </div>
+      <a href="#video" class="w3-bar-item w3-button"><i class="fab fa-youtube"></i> VIDEO</a>
+      <a href="#he" class="w3-bar-item w3-button"><i class="far fa-clipboard"></i></i> EVALUATION</a>
+      <a href="#process" class="w3-bar-item w3-button"><i class="fas fa-tasks"></i></i></i> PROCESS &amp; LESSONS LEARNED</a>
+
+
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button">PERSONAS</a>
+  <a href="progress-report.pdf" onclick="w3_close()" class="w3-bar-item w3-button">PROGRESS REPORT</a>
+  <a href="#brainstorm" onclick="w3_close()" class="w3-bar-item w3-button">PROTOTYPE</a>
+  <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button">VIDEO</a>
+  <a href="#he" onclick="w3_close()" class="w3-bar-item w3-button">EVALUATION</a>
+  <a href="#process" onclick="w3_close()" class="w3-bar-item w3-button">PROCESS</a>
+
+
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Ally the Alzheimer's App</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Ally the Alzheimer's App</span><br>
+    <span class="w3-large">So that you can care for your patients, Ally cares for you.</span>
+    <p><a href="quicksheet.pdf" target="_blank" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Project Description for Heuristic Evaluation - Learn more!</a></p>
+  </div> 
+</header>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:64px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">We are all undergraduate students at Rutgers University</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="kellyz.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Yuhui Zhang</h3>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="kellyt.JPG" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Kelly Tran</h3>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="anchalee.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Anchalee Pagsanjan</h3>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="yaxuan.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Yaxuan Zhu</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Description -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We want to help.</h3>
+      <p>techtr.io is a group of four students at Rutgers University formed for the Human Computer Interaction course. Our members are Anchalee Pagsanjan, Kelly Tran, Yuihui Zhang, and Yaxuan Zhu. We are all students in the School of Communication &amp; Information (SC&amp;I). 
+
+      Our goal for this project is to create a smartphone app for caregivers of dementia patients that may also have some added functionality for dementia patients themselves. We hope to be able to ease the strain that caregiving may create and design features based off of user research. To contribute to our user research, you can go to the Data page!</p>
+      <p><a href="https://comminfo.rutgers.edu/about" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> SC&amp;I Website</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="sci-building.jpg" alt="SC&amp;I Building" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+
+<!-- Project Proposal -->
+<div class="w3-container" style="padding:64px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE PROJECT</h3>
+  <p class="w3-center w3-large">How and why this project came to life</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <p class="w3-large">What is the context?</p>
+      <p>Caregiving for a dementia patient is a huge challenge for those who are dealing with the changes in behavior and lifestyle of patients. Currently, it is estimated that there are over 5 million people in the United States living with dementia, and 35% of caregivers have reported that their health has gotten worse as a result of caring for elderly dementia patients [2]. Research conducted at Stanford also found that 40% of Alzheimer's caregivers die from stress-related disorders before the person with dementia they are caring for dies [1]. </p>
+    </div>
+    <div class="w3-quarter">
+      <p class="w3-large">What is the problem?</p>
+      <p>There is a lot of room for improvement in terms of giving caregivers the best tools and resources to support their patients. There is a lack of resources for caregivers to learn from and knowledge of methods to utilize, like memory retention exercises like music therapy, memory training games, and repetition. Caregivers also lack better tools to monitor their patients and access to resources to understand and cope with the changes in their patients. </p>
+    </div>
+    <div class="w3-quarter">
+      <p class="w3-large">Why is this problem important?</p>
+      <p>Caregivers are extremely important components to the welfare of dementia patients. This is a huge problem since caregivers are often responsible for the direct care of dementia patients and interact with them daily. In order to provide their patients with the best possible care, caregivers need access to more tools and resources that can introduce them to newer methods and also help them cope with the changing behaviors of their patients. By increasing the availability of resources to caregivers, we are also indirectly helping dementia patients and giving them a better quality of life. </p>
+    </div>
+    <div class="w3-quarter">
+      <p class="w3-large">Why a smartphone app?</p>
+      <p>A smartphone interface is much more convenient for the caregiver or dementia patient to interact with. Phones are small and portable and can be carried in a caregiver’s pocket. Whether the caregiver is at a patient’s bedside or on the run, he or she will always have access to the resources that the app offers. A smartwatch interface would also be useful, especially for the actual dementia patients. Many dementia patients are elderly and are more familiar with using a watch than a smartphone. They can easily view information or interact with the smartwatch in this way. </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Data Header -->
+<div class="w3-container w3-row w3-center w3-black w3-padding-64" id="data">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIftz-bNc8quq98haTi_Hbu-eWwF64sA9UqE1SVVdhyf0lvg/viewform" target="_blank"><i class="fas fa-file-alt"></i></a>
+    </span>
+    <br>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIftz-bNc8quq98haTi_Hbu-eWwF64sA9UqE1SVVdhyf0lvg/viewform" target="_blank" class="w3-button">Survey Form <i class="fas fa-external-link-alt"></i></a>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">
+      <a href="survey-analysis.pdf" target="_blank"><i class="fas fa-chart-area"></i></a>
+    </span>
+    <br>
+      <a href="survey-analysis.pdf" target="_blank" class="w3-button">Survey Analysis <i class="fas fa-external-link-alt"></i></a>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">
+      <a href="interview-questions.pdf"><i class="fas fa-comments"></i></a>
+    </span>
+    <br>
+      <a href="interview-questions.pdf" target="_blank" class="w3-button">User Interviews <i class="fas fa-external-link-alt"></i></a>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">
+        <a href="interview-analysis.pdf" target="_blank"><i class="fas fa-table"></i></a>
+    </span>
+    <br>
+      <a href="interview-analysis.pdf" target="_blank" class="w3-button">Interview Analysis <i class="fas fa-external-link-alt"></i></a>
+  </div>
+</div>
+
+<!-- Affinity Diagram Section -->
+<div class="w3-container" style="padding:64px 16px">
+  <h3 class="w3-center">AFFINITY DIAGRAM</h3>
+  <p class="w3-center w3-large">A synthesis of our user interview data</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third">
+      <a href="ad1.jpeg" target="_blank"><img src="ad1.jpeg" style="width:100%"></a>
+    </div>
+    <div class="w3-third">
+      <a href="ad2.jpeg" target="_blank"><img src="ad2.jpeg" style="width:100%"></a>
+    </div>
+    <div class="w3-third">
+      <a href="ad3.jpeg" target="_blank"><img src="ad3.jpeg" style="width:100%"></a>
+      <a href="affinity-diagram-after.JPG" target="_blank"><img src="affinity-diagram-after.JPG" style="width:100%"></a>
+  	</div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Personas and Storyboards Section -->
+<div class="w3-container w3-light-grey w3-padding-64" id="personas">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">PERSONAS</h3>
+    <div class="w3-center"><img src="persona-sheila.png" style="width:80%"></div>
+    <br>
+    <br>
+    <div class="w3-center"><img src="persona-hana.png" style="width:80%"></div>
+  </div>
+</div>
+
+<!-- Storyboards -->
+<div class="w3-container w3-black w3-padding-64" id="storyboards">
+  <h3 class="w3-center"><a href="storyboards.pdf" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> Storyboards</a></h3>
+</div>
+
+
+<!-- Brainstorm -->
+<div class="w3-container" style="padding:64px 16px" id="brainstorm">
+  <h3 class="w3-center">BRAINSTORM</h3>
+  <p class="w3-center w3-large">Early stages of brainstorming features for the app (click side buttons to show sketches)</p>
+
+  <style>
+  .slider {display:none}
+  .demo1 {cursor:pointer}
+  </style>
+  
+  <div class="w3-content">
+    <div class="w3-col s2">   
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(1)">Checklist</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(2)">Daily Dashboard</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(3)">Emergency Contacts</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(4)">Mindread (Watch)</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(5)">Mindread (Phone)</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(6)">Monitor</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(7)">Q&amp;A Board</button>
+        <button class="demo1 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(8)">Refresher</button>
+    </div>
+    <div class="w3-col s10">
+      <img class="slider" src="brainstorm-checklist.png" style="width:100%">
+      <img class="slider" src="brainstorm-daily.png" style="width:100%">
+      <img class="slider" src="brainstorm-emergency.png" style="width:100%">
+      <img class="slider" src="brainstorm-mindread.png" style="width:100%">
+      <img class="slider" src="brainstorm-mindread2.png" style="width:100%">
+      <img class="slider" src="brainstorm-monitor.png" style="width:100%">
+      <img class="slider" src="brainstorm-qaboard.png" style="width:100%">
+      <img class="slider" src="brainstorm-refresher.png" style="width:100%">
+    </div>
+  </div>
+
+</div>
+
+<div class="w3-container" style="padding:0px 16px">
+	 <h5 class="w3-center"><a href="brainstorm.pdf" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> Brainstorm Details</a></h5>
+</div>
+
+
+<!-- Lo-Fi Prototype -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="lofi">
+  <h3 class="w3-center">LO-FI PROTOTYPE</h3>
+  <p class="w3-center w3-large">Refined features from brainstorming (click side buttons to show sketches)</p>
+
+  <style>
+  .lofi {display:none}
+  .demo2 {cursor:pointer}
+  </style>
+  
+  <div class="w3-content">
+    <div class="w3-col s2">   
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(9)">Daily Dashboard (1)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(10)">Daily Dashboard (2)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(11)">Monitor (1)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(12)">Monitor (2)</button>
+        <button class="demo2 w3-opacity w3-hover-opacity-off" style="width:100%" onclick="currentDiv(13)">Q&amp;A Board</button>
+    </div>
+    <div class="w3-col s10">
+      <img class="slider" src="lofi-dailydash.png" style="width:100%">
+      <img class="slider" src="lofi-dailydash2.png" style="width:100%">
+      <img class="slider" src="lofi-monitor.png" style="width:100%">
+      <img class="slider" src="lofi-monitor2.png" style="width:100%">
+      <img class="slider" src="lofi-qaboard.png" style="width:100%">
+    </div>
+  </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slider");
+        var dots = document.getElementsByClassName("demo2");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-opacity-off";
+      }
+    </script>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:0px 16px">
+	 <h5 class="w3-center"><a href="lofi.pdf" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> Lo-Fi Prototyle Details</a></h5>
+</div>
+
+<!-- Flowchart and Wireframe Section -->
+<div class="w3-container w3-row w3-center w3-padding-64" id="flowchart">
+  <h3 class="w3-center">FLOWCHART</h3>
+  <p class="w3-center w3-large">System architecture of app</p>
+  <img src="flowchart.png" style="width:80%">
+  <br>
+  <br>
+  <h5 class="w3-center"><a href="wireframes.pdf" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> Wireframe</a></h5>
+
+</div>
+
+
+<!-- Critique -->
+<div class="w3-container w3-black w3-padding-64" id="critique">
+  <h3 class="w3-center"><a href="critique.pdf" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> Critique &amp; Comments</a></h3>
+</div>
+
+<!-- Hi-Fi Prototype -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="hifi">
+  <div class="w3-row-padding">
+    <div class="w3-col m4">
+      <h3>HIGH FIDELITY PROTOTYPE</h3>
+      <p>After demonstrating the low fidelity prototype to our classmates, we used the critique and feedback to improve upon the design, flow, and functionality. Check it out on Indigo Studio!</p>
+      <p><a href="https://indigodesigned.com/share/run/0wehq85b96xb#f=getting%20started" target="_blank" class="w3-button w3-black"><i class="material-icons">phone_iphone</i> </i> Indigo Studio Prototype (Mobile App)</a></p>
+      <p><a href="https://indigodesigned.com/share/run/9rw29k0370yr#f=welcome" target="_blank" class="w3-button w3-black"><i class="material-icons">watch</i> </i> Indigo Studio Prototype (Smartwatch)</a></p>
+    </div>
+    <div class="w3-col m4">
+      <img class="w3-image" src="hifi-screenshot2.png">
+    </div>
+    <div class="w3-col m4">
+      <img class="w3-image" src="hifi-screenshot.png">
+    </div>
+  </div>
+</div>
+
+<!-- Video -->
+
+<div class="w3-container w3-light-grey w3-padding-64" id="video">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">VIDEO</h3>
+    <div class="w3-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/zmmCZ4rWKMY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<!-- Heuristic Evaluation -->
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="he">
+  <div class="w3-row-padding">
+  	<h3 class="w3-center">HEURISTIC EVALUATION</h3>
+  	<div>
+      <table class="w3-table-all">
+      	<tr>
+      		<td width="33%"><b>Feedback</b>
+      		</td>
+      		<td width="33%"><b>Why It Matters</b>
+      		</td>
+      		<td width="33%"><b>Response and Possible Solutions</b>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>Performing the action of going back is not always consistent in this app. For instance, if you go on the control page and hit one of those 4 options, there is no way to go back to the main control page without just pressing the control button at the bottom. This is a problem because it is a bit confusing how the back button is offered on other pages, but not offered on any of the control pages. As I was going through the app, I noticed this and was unsure at first how to get back to the main control page without the back button before noticing that I could hit the main control button at the bottom. 
+      		</td>
+      		<td>This is highly critical to maintain consistency throughout the app. Navigation should be obvious, easy, and intuitive. As the feedback pointed out, it may not be apparent that pressing the control button is the way to navigate backwards so we should have the back arrow visible on all screens. 
+      		</td>
+      		<td>Back arrow buttons have been added to all screens of the app to ensure navigating is consistent and fluid. 
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>In the check list , it does not match the real world version of a checklist. Also checklist are used either completed or not and a user would check them off, the checklist in you app appears as more as a schedule.
+      		</td>
+      		<td>This issue is critical because the user might try to check things off on the Checklist even though this feature is set up more like a schedule. The user may be confused and waste time trying to perform a function that isn’t available. 
+      		</td>
+      		<td>The feature will be renamed to Schedule instead of Checklist, however, we want to be able to show the effect of after an item has passed or has been completed. The functionality of Indigo is limited, but we would like to be able to implement perhaps greying out or crossing off an item on the schedule after the time has passed. 
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>There is no personalization on the user side. I see on the settings page you can add you background, experience, and your e-mail. But I was curious if you could add information about your patient. There is a button for Manage Patient Profile, but don't know if this is something that will be added on later. 
+      		</td>
+      		<td>Not critical, however, it can confuse our users and possibly ruin the experience.
+      		</td>
+      		<td>There is actually a patient profile manager. When you first signup, it will ask you what your patient’s symptoms are and their name. You can also add more patients. However, we should add another page when signing up. One page should be added and clearly state that that page is for the caregiver’s information. Then after that page, it should be the patient’s information but clearly stated that it’s for the patients. 
+      		</td>
+      	</tr>
+      </table>
+    </div>
+    <br/>
+    <div>
+      <p>Our peers mainly made suggestions concerning confusion over the UI aspects of our app. Some of the critical points mentioned were the lack of action buttons available for some parts of the app, such as the availability of a consistent back button and button to add questions on the Q&amp;A board. We plan to address this by adding in the necessary buttons on the pages where they’re lacking in the app while ensuring that we maintain consistency with other aspects of the user interface. One other critical issue dealt with information handling, specifically with users lacking the means for verifying information and personalization. We plan to address this by adding in the functionality of error checking along with additional personalization sections when users sign up to create a greater sense of “friendliness” between the user and our application, echoing our motto that our app truly cares for them. One final issue that our peers suggested was making labels available on our monitor board to inform users textually about the different sections available to them. We plan to implement these text features by allowing users to choose whether or not they would like the text to be displayed at the touch of the screen. As we continue improving our design, we will be focusing much more on maintaining consistency while ensuring that users have a mobile and user-friendly experience navigating through Ally. </p>
+      <p><a href="assignments/P12.pdf" target="_blank" class="w3-button w3-black"><i class="fas fa-external-link-alt"></i> </i> Full Heuristic Evaluation Response</a></p>
+    </div>
+    <br/>
+  </div>
+</div>
+
+<!-- Process -->
+<div class="w3-container" style="padding:64px 16px" id="process">
+  <h3 class="w3-center">THE PROCESS</h3>
+  <p class="w3-center w3-large">
+
+  	Throughout this process, we learned many valuable lessons about designing for the user and avoiding the mistake of relying on our own mental model. From the critique process, we learned the danger of being too familiar with your own design and overlooking usability flaws. The best way to overcome this is to prototype and ask for critique often. Through class, we learned that it's important to have many iterations of a project before settling on the "right" solution and this was directly seen throughout the prototyping process.
+
+  	<br/><br/>
+ 	 One thing we think our group did extremely well is our communication. We used GroupMe to communicate with each other and we met up each week to update, discuss, and to improve our project. To keep strong communication is crucial to any team work because it will keep all parts organized and will prevent anyone from falling behind. This is one important thing we learned and we will definitely keep doing this for our future projects.
+	<br/><br/>
+	
+	We also learned many things gradually through the course. We practiced moving from user-centered design concepts through the cycle of empathize, define, ideate, and prototype. Numerous elements go into the overall process of a design. These range from topics such as idea generation, data collection, story board, prototyping, UI design, and user experience design. We explored the process for designing effective, efficient experiences for our users. The process of prototype design is all about continuing to iterate untill it gets better and better.
+
+	<br/><br/>
+
+	Our team spent an entire semester going through the stages of collecting data, researching users, brainstorming, prototyping, processing feedback, and more. Interested in our work? Click on the numbers below to follow our journey in finding a solution to make caregiving more manageable.
+
+  </p>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+       <div class="w3-third w3-button"><h1><a href="assignments/p0.pdf" target="_blank">0 <br/><h3>Team Memo</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p1.pdf" target="_blank">1 <br/><h3>Problem Statement</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p2.pdf" target="_blank">2 <br/><h3>Planning Data Collection</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p3.pdf" target="_blank">3 <br/><h3>Data Collection</h3></a></h1></div>
+
+       <div class="w3-third w3-button"><h1><a href="assignments/p4.pdf" target="_blank">4 <br/><h3>Data Analysis</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p5.pdf" target="_blank">5 <br/><h3>Personas</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p6.pdf" target="_blank">6 <br/><h3>Progess Report</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p7.pdf" target="_blank">7 <br/><h3>Brainstorm</h3></a></h1></div>
+
+	
+
+       <div class="w3-third w3-button"><h1><a href="assignments/p8.pdf" target="_blank">8 <br/><h3>Lo-Fi Prototype</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p9.pdf" target="_blank">9 <br/><h3>Wireframe</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="assignments/p10.pdf" target="_blank">10 <br/><h3>Critique &amp; Feedback</h3></a></h1></div>
+       <div class="w3-third w3-button"><h1><a href="https://indigodesigned.com/share/run/0wehq85b96xb#f=getting%20started" target="_blank">11 <br/><h3>Hi-Fi Prototype</h3></a></h1></div>
+       
+
+       <div class="w3-button"><h1><a href="assignments/p12.pdf" target="_blank">12 <br/><h3>Heuristic Evaluation</h3></a></h1></div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+ 
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to the top</a>
+  <p>techtr.io 2018</p>
+</footer>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
